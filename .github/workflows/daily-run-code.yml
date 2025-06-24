@@ -2,7 +2,7 @@ name: Daily Cypress Test
 
 on:
   schedule:
-    - cron: '15 2 * * *' # Runs at 8:15 AM (Myanmar Time = UTC+6:30)
+    - cron: '30 9 * * *' # Runs at 8:15 AM (Myanmar Time = UTC+6:30)
   workflow_dispatch: # allows manual trigger
 
 jobs:
