@@ -40,6 +40,7 @@ function formatWithComas(num) {
 function sentDynamicallyTelegramAlert(before,after,label){
   const formattedBefore = formatWithComas(before);
   const formattedAfter = formatWithComas(after);
+  const percentChange = ((after - before) / before)* 100;
 
   if(before < after) {
     return cy.task('sendTelegramMessage', `*${label}*: Revenue increased from ${formattedBefore} to ${formattedAfter}`);
@@ -49,6 +50,8 @@ function sentDynamicallyTelegramAlert(before,after,label){
     return cy.task('sendTelegramMessage', `*${label}*: MYN143 - Daily Service Revenue detail is Normal`);
   }
 }
+
+
 
 it('Compare yesterday revenue and daybeforeyesterday',() => {
 const label = "MYN143 - Daily Service Revenue";

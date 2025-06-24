@@ -42,8 +42,7 @@ Cypress.on("uncaught:exception", (err, runnable) => {
   }
 });
 
-import { addMatchImageSnapshotCommand } from 'cypress-image-snapshot/command';
-addMatchImageSnapshotCommand();
+
 
 
 import axios from 'axios';

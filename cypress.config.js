@@ -1,7 +1,6 @@
 const { defineConfig } = require("cypress");
 const axios = require('axios');
 require('dotenv').config();
-const { addMatchImageSnapshotPlugin } = require('cypress-image-snapshot/plugin');
 
 module.exports = defineConfig({
   downloadsFolder: "./downloads",
@@ -36,7 +35,6 @@ module.exports = defineConfig({
     });
   }
 });
-      addMatchImageSnapshotPlugin(on, config);
     },
   },
 });
