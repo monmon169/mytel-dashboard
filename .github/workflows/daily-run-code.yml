@@ -2,8 +2,8 @@ name: Daily Cypress Test
 
 on:
   schedule:
-    - cron: '30 9 * * *' # Runs at 8:15 AM (Myanmar Time = UTC+6:30)
-  workflow_dispatch: # allows manual trigger
+    - cron: '45 9 * * *' 
+  workflow_dispatch: 
 
 jobs:
   cypress-run:
