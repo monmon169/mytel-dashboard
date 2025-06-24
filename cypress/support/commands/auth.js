@@ -49,7 +49,7 @@ import axios from 'axios';
 
 Cypress.Commands.add('sentTelegramMessage', (message) => {
   const telegramBotToken = '8051879244:AAFBrI99Dsf6k31JO87PqIcWdFJSdVR4qfE';
-  const chatId = '5183881393'; // Group ID or user ID
+  const chatId = '-4888388278'; // Group ID or user ID
 
   return axios.post(`https://api.telegram.org/bot${telegramBotToken}/sendMessage`, {
     chat_id: chatId,
