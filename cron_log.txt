@@ -166,3 +166,529 @@ Telegram message sent.
   └────────────────────────────────────────────────────────────────────────────────────────────────┘
     ✔  All specs passed!                        00:08        2        2        -        -        -  
 
+
+DevTools listening on ws://127.0.0.1:52350/devtools/browser/db958d7f-bdd2-4f7f-9b28-951acc7fabb9
+
+====================================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:        14.4.1                                                                         │
+  │ Browser:        Electron 130 (headless)                                                        │
+  │ Node Version:   v22.13.1 (/usr/local/bin/node)                                                 │
+  │ Specs:          2 found (1-auth/login.cy.js, 2-summaryReport/revenue.cy.js)                    │
+  │ Searched:       cypress/e2e/**/*.cy.{js,jsx,ts,tsx}                                            │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  1-auth/login.cy.js                                                              (1 of 2)
+
+
+  Login form for Mytel Dashboard
+    ✓ Should be successfully login with valid credentials (33148ms)
+
+
+  1 passing (33s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        1                                                                                │
+  │ Passing:      1                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     33 seconds                                                                       │
+  │ Spec Ran:     1-auth/login.cy.js                                                               │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  2-summaryReport/revenue.cy.js                                                   (2 of 2)
+
+
+  Revenue
+Telegram message sent.
+    ✓ Compare yesterday revenue and daybeforeyesterday (6738ms)
+
+
+  1 passing (7s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        1                                                                                │
+  │ Passing:      1                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     6 seconds                                                                        │
+  │ Spec Ran:     2-summaryReport/revenue.cy.js                                                    │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+====================================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ ✔  1-auth/login.cy.js                       00:33        1        1        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  2-summaryReport/revenue.cy.js            00:06        1        1        -        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    ✔  All specs passed!                        00:40        2        2        -        -        -  
+
+
+DevTools listening on ws://127.0.0.1:54382/devtools/browser/d2bc0bfc-408d-457c-9960-b190af3260da
+
+====================================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:        14.4.1                                                                         │
+  │ Browser:        Electron 130 (headless)                                                        │
+  │ Node Version:   v22.13.1 (/usr/local/bin/node)                                                 │
+  │ Specs:          2 found (1-auth/login.cy.js, 2-summaryReport/revenue.cy.js)                    │
+  │ Searched:       cypress/e2e/**/*.cy.{js,jsx,ts,tsx}                                            │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  1-auth/login.cy.js                                                              (1 of 2)
+
+
+  Login form for Mytel Dashboard
+    ✓ Should be successfully login with valid credentials (2749ms)
+
+
+  1 passing (3s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        1                                                                                │
+  │ Passing:      1                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     2 seconds                                                                        │
+  │ Spec Ran:     1-auth/login.cy.js                                                               │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  2-summaryReport/revenue.cy.js                                                   (2 of 2)
+
+
+  Revenue
+Telegram message sent.
+    ✓ Compare yesterday revenue and daybeforeyesterday (4626ms)
+
+
+  1 passing (5s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        1                                                                                │
+  │ Passing:      1                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     4 seconds                                                                        │
+  │ Spec Ran:     2-summaryReport/revenue.cy.js                                                    │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+====================================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ ✔  1-auth/login.cy.js                       00:02        1        1        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  2-summaryReport/revenue.cy.js            00:04        1        1        -        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    ✔  All specs passed!                        00:07        2        2        -        -        -  
+
+
+DevTools listening on ws://127.0.0.1:58547/devtools/browser/47533798-f5f9-451e-8069-09aaf6cc8b66
+
+====================================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:        14.4.1                                                                         │
+  │ Browser:        Electron 130 (headless)                                                        │
+  │ Node Version:   v22.13.1 (/usr/local/bin/node)                                                 │
+  │ Specs:          2 found (1-auth/login.cy.js, 2-summaryReport/revenue.cy.js)                    │
+  │ Searched:       cypress/e2e/**/*.cy.{js,jsx,ts,tsx}                                            │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  1-auth/login.cy.js                                                              (1 of 2)
+
+
+  Login form for Mytel Dashboard
+    ✓ Should be successfully login with valid credentials (3113ms)
+
+
+  1 passing (3s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        1                                                                                │
+  │ Passing:      1                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     3 seconds                                                                        │
+  │ Spec Ran:     1-auth/login.cy.js                                                               │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  2-summaryReport/revenue.cy.js                                                   (2 of 2)
+
+
+  Revenue
+Telegram message sent.
+    ✓ Compare yesterday revenue and daybeforeyesterday (4876ms)
+
+
+  1 passing (5s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        1                                                                                │
+  │ Passing:      1                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     4 seconds                                                                        │
+  │ Spec Ran:     2-summaryReport/revenue.cy.js                                                    │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+====================================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ ✔  1-auth/login.cy.js                       00:03        1        1        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  2-summaryReport/revenue.cy.js            00:04        1        1        -        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    ✔  All specs passed!                        00:08        2        2        -        -        -  
+
+
+DevTools listening on ws://127.0.0.1:59145/devtools/browser/2c725c46-1ae7-4135-ac47-4ed7d6c11e0a
+
+====================================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:        14.4.1                                                                         │
+  │ Browser:        Electron 130 (headless)                                                        │
+  │ Node Version:   v22.13.1 (/usr/local/bin/node)                                                 │
+  │ Specs:          2 found (1-auth/login.cy.js, 2-summaryReport/revenue.cy.js)                    │
+  │ Searched:       cypress/e2e/**/*.cy.{js,jsx,ts,tsx}                                            │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  1-auth/login.cy.js                                                              (1 of 2)
+
+
+  Login form for Mytel Dashboard
+    ✓ Should be successfully login with valid credentials (5177ms)
+
+
+  1 passing (5s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        1                                                                                │
+  │ Passing:      1                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     5 seconds                                                                        │
+  │ Spec Ran:     1-auth/login.cy.js                                                               │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  2-summaryReport/revenue.cy.js                                                   (2 of 2)
+
+
+  Revenue
+    ✓ Compare yesterday and daybeforeyesterday for Service Revenue Date Details (8517ms)
+
+
+  1 passing (9s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        1                                                                                │
+  │ Passing:      1                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     8 seconds                                                                        │
+  │ Spec Ran:     2-summaryReport/revenue.cy.js                                                    │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+====================================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ ✔  1-auth/login.cy.js                       00:05        1        1        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  2-summaryReport/revenue.cy.js            00:08        1        1        -        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    ✔  All specs passed!                        00:13        2        2        -        -        -  
+
+
+DevTools listening on ws://127.0.0.1:49886/devtools/browser/0bbd8c28-745a-47dc-a804-11fd9d6bada7
+
+====================================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:        14.4.1                                                                         │
+  │ Browser:        Electron 130 (headless)                                                        │
+  │ Node Version:   v22.13.1 (/usr/local/bin/node)                                                 │
+  │ Specs:          2 found (2-summaryReport/revenue.cy.js, 1-auth/login.cy.js)                    │
+  │ Searched:       cypress/e2e/**/*.cy.{js,jsx,ts,tsx}                                            │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  2-summaryReport/revenue.cy.js                                                   (1 of 2)
+
+
+  Revenue
+Telegram message sent.
+    ✓ Compare yesterday revenue and daybeforeyesterday for MYN143 - Daily Service Revenue (11178ms)
+    ✓ Compare yesterday and daybeforeyesterday for Service Revenue Date Details (2211ms)
+
+
+  2 passing (14s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     13 seconds                                                                       │
+  │ Spec Ran:     2-summaryReport/revenue.cy.js                                                    │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  1-auth/login.cy.js                                                              (2 of 2)
+
+
+  Login form for Mytel Dashboard
+    ✓ Should be successfully login with valid credentials (7595ms)
+
+
+  1 passing (8s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        1                                                                                │
+  │ Passing:      1                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     7 seconds                                                                        │
+  │ Spec Ran:     1-auth/login.cy.js                                                               │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+====================================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ ✔  2-summaryReport/revenue.cy.js            00:13        2        2        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  1-auth/login.cy.js                       00:07        1        1        -        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    ✔  All specs passed!                        00:21        3        3        -        -        -  
+
+
+DevTools listening on ws://127.0.0.1:49539/devtools/browser/7ff6adfb-d873-4eae-ae72-7081687c8002
+
+====================================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:        14.4.1                                                                         │
+  │ Browser:        Electron 130 (headless)                                                        │
+  │ Node Version:   v22.13.1 (/usr/local/bin/node)                                                 │
+  │ Specs:          2 found (1-auth/login.cy.js, 2-summaryReport/revenue.cy.js)                    │
+  │ Searched:       cypress/e2e/**/*.cy.{js,jsx,ts,tsx}                                            │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  1-auth/login.cy.js                                                              (1 of 2)
+
+
+  Login form for Mytel Dashboard
+    ✓ Should be successfully login with valid credentials (6587ms)
+
+
+  1 passing (7s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        1                                                                                │
+  │ Passing:      1                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     6 seconds                                                                        │
+  │ Spec Ran:     1-auth/login.cy.js                                                               │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  2-summaryReport/revenue.cy.js                                                   (2 of 2)
+
+
+  Revenue
+Telegram message sent.
+    ✓ Compare yesterday revenue and daybeforeyesterday for MYN143 - Daily Service Revenue (4658ms)
+Telegram message sent.
+    1) Compare yesterday and daybeforeyesterday for Service Revenue Date Details
+
+
+  1 passing (12s)
+  1 failing
+
+  1) Revenue
+       Compare yesterday and daybeforeyesterday for Service Revenue Date Details:
+     AssertionError: Timed out retrying after 4000ms: Expected to find element: `2`, but never found it. Queried from:
+
+              > cy.get(:nth-child(3) > .ant-card-body > .table-detail > .col-12 > .ant-collapse > .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box>div)
+      at getCellNumericValue1 (webpack://mytel-dashboard-automation/./cypress/e2e/2-summaryReport/revenue.cy.js:79:52)
+      at eval (webpack://mytel-dashboard-automation/./cypress/e2e/2-summaryReport/revenue.cy.js:113:4)
+  at Array.forEach (<anonymous>)
+      at Context.eval (webpack://mytel-dashboard-automation/./cypress/e2e/2-summaryReport/revenue.cy.js:112:20)
+
+
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      1                                                                                │
+  │ Failing:      1                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  1                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     12 seconds                                                                       │
+  │ Spec Ran:     2-summaryReport/revenue.cy.js                                                    │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  /Users/bryan/Desktop/Automation/Mytel Dashboard Automation/screenshots/2-summary    (2560x1440)
+     Report/revenue.cy.js/Revenue -- Compare yesterday and daybeforeyesterday for Ser               
+     vice Revenue Date Details (failed).png                                                         
+
+
+====================================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ ✔  1-auth/login.cy.js                       00:06        1        1        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✖  2-summaryReport/revenue.cy.js            00:12        2        1        1        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    ✖  1 of 2 failed (50%)                      00:18        3        2        1        -        -  
+

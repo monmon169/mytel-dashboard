@@ -1,7 +1,6 @@
 /// <reference types="cypress" />
 import LoginPage from "../../POM/pages/LoginPage";
 import NavBarPage from "../../POM/nav/navBarPage";
-import dayjs from "dayjs";
 
 const login = new LoginPage();
 const navbar = new NavBarPage();
