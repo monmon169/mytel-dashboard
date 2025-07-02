@@ -3,7 +3,6 @@
   import NavBarPage from "../../POM/nav/navBarPage";
   import SideBarPage from "../../POM/nav/SideBarPage";
   import RevenuePage from "../../POM/pages/RevenuePage";
-  import dayjs from "dayjs";
 
 
   const login = new LoginPage();
@@ -27,7 +26,7 @@
     return num.toLocaleString("en-US")
   }
 
-  it('Compare yesterday revenue and daybeforeyesterday for MYN143 - Daily Service Revenue',() => {
+  it('Compare yesterday and daybeforeyesterday for MYN143 - Daily Service Revenue',() => {
   const label = "MYN143 - Daily Service Revenue";
   const rowIndex = 0;
     
@@ -62,20 +61,22 @@
     const formattedBefore = formatWithComas(before);
     const formattedAfter = formatWithComas(after);
 
-    if(before < after) {
-      return cy.task('sendTelegramMessage', `*${label}*: Revenue increased from ${formattedBefore} to ${formattedAfter}`);
-    }else if (before > after) {
-      return cy.task('sendTelegramMessage', `*${label}*: Revenue decreased from ${formattedBefore} to ${formattedAfter}`);
+    if(isNaN(before) || isNaN(after) || before === 0 || after === 0) {
+      return cy.task('sendTelegramMessage', `*${label}*: Data value is return *Null* value`);
+    }else if (before > after * 1.5) {
+      return cy.task('sendTelegramMessage', `*${label}*: Alert! Value is suddently increased 50% from ${formattedBefore} to ${formattedAfter}`);
+    }else if (before < after * 1.5){
+      return cy.task('sendTelegramMessage', `*${label}*: Alert! Value is suddently decreased 50% from ${formattedBefore} to ${formattedAfter}`);
     }else {
-      return cy.task('sendTelegramMessage', `*${label}*: MYN143 - Daily Service Revenue detail is Normal`);
+      return cy.task('sendTelegramMessage', `*${label}*: Alert! Value is ${formattedBefore} and ${formattedAfter}`)
     }
   }
-    })
-  })
+  });
+  });
   })
 
   it('Compare yesterday and daybeforeyesterday for Service Revenue Date Details', () => {
-    const label = "Service Revenue Date Details";
+    const title = "Service Revenue Date Details";
     const serviceRevneueRow = [
       {name: "MYN143 - Service Revenue", index:0},
       {name: "MYN148 - Basic Consumption", index:2},
@@ -120,14 +121,23 @@
     const formattedBefore = formatWithComas(before);
     const formattedAfter = formatWithComas(after);
 
-    if(before < after) {
-      return cy.task('sendTelegramMessage', `*${label}*: Revenue increased from ${formattedBefore} to ${formattedAfter}`);
-    }else if(before > after) {
-      return cy.task('sendTelegramMessage', `*${label}*: Revenue decreased from ${formattedBefore} to ${formattedAfter}`);
+    if(isNaN(before) || isNaN(after) || before === 0 || after === 0) {
+      return cy.task('sendTelegramMessage', `*${title}*: *${label}* : Data value is return *Null* value`);
+    }else if (before > after * 1.5) {
+      return cy.task('sendTelegramMessage', `*${label}*: *${label}* : Alert! Value is suddently increased 50% from ${formattedBefore} to ${formattedAfter}`);
+    }else if (before < after * 1.5){
+      return cy.task('sendTelegramMessage', `*${label}*: *${label}* : Alert! Value is suddently decreased 50% from ${formattedBefore} to ${formattedAfter}`);
     }else {
-      return cy.task('sendTelegramMessage', `*${label}*: Revenue decreased from ${formattedBefore} to ${formattedAfter}`);
+      return cy.task('sendTelegramMessage', `*${label}*: *${label}* : Alert! Value  ${formattedBefore} and ${formattedAfter}`)
     }
   }
+  });
+
+  it("Compare yesterday and daybeforeyesterday for MYN194 - Daily Voice Traffic at 'Mobile'", () => {
+    const label = "MYN194 - Daily Voice Traffic";
+    const rowIndex = 0;
+
+   
   })
   })
 

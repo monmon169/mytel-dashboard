@@ -17,7 +17,7 @@ describe("Login form for Mytel Dashboard",() => {
    
    //check the nav bar text
    navbar.checkCalenderBtn()
-  .should('exist')
+  .should('exist') 
   .and('be.visible')
   });
 })

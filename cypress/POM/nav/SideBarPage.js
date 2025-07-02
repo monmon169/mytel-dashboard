@@ -2,6 +2,7 @@ class SideBarPage {
     elements = {
     sideBarBtn : () => cy.get('.ant-menu-submenu-title > .icon'),
     revenueBtn :() => cy.get('ul.ng-star-inserted > :nth-child(2)'),
+    mobileBtn : () => cy.get('ul.ng-star-inserted > :nth-child(3)'),
     topMsg : () => cy.get('.text-greeting'),
     }
 
@@ -15,6 +16,10 @@ class SideBarPage {
 
     clickRevenueBtn() {
         this.elements.revenueBtn().click();
+    }
+
+    clickMobileBtn() {
+        this.elements.mobileBtn().click();
     }
 }
 export default SideBarPage;
