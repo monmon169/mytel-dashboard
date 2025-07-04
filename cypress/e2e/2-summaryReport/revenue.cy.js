@@ -54,21 +54,32 @@
   //compare to two month data
   getCellNumericValue(rowIndex, dayBeforeYesterdayColIndex).then(beforeVal => {
     getCellNumericValue(rowIndex,yesterdayColIndex).then(afterVal => {
-      sentDynamicallyTelegramAlert(beforeVal,afterVal,label)
+     sentDynamicallyTelegramAlert(beforeVal,afterVal,label)
 
   //sent Telegram message based on value comparison
   function sentDynamicallyTelegramAlert(before,after,label){
     const formattedBefore = formatWithComas(before);
     const formattedAfter = formatWithComas(after);
 
-    if(isNaN(before) || isNaN(after) || before === 0 || after === 0) {
+    if(isNaN(before) || isNaN(after) || before === 0 || after === 0){
       return cy.task('sendTelegramMessage', `*${label}*: Data value is return *Null* value`);
-    }else if (before > after) {
-      return cy.task('sendTelegramMessage', `*${label}*: Alert! Value is increased from ${formattedBefore} to ${formattedAfter}`);
-    }else if (before < after * 1.5){
-      return cy.task('sendTelegramMessage', `*${label}*: Alert! Value is  decreased  from ${formattedBefore} to ${formattedAfter}`);
-    }else {
-      return cy.task('sendTelegramMessage', `*${label}*: Alert! Value is ${formattedBefore} and ${formattedAfter}`)
+    }else if(before > after || before < after) {
+      const rawChange = ((after - before) /before) * 100;
+      const percentageChange = Math.abs(rawChange).toFixed(2);
+
+      if(rawChange > 50) {
+      return cy.task('sendTelegramMessage', `*${label}*: value suddenly increased by *${percentageChange}%* (from ${formattedBefore} to ${formattedAfter})`);
+      }else if(rawChange < -50) {
+        return cy.task('sendTelegramMessage', `*${label}*: value suddently decreased by *${percentageChange}%* (from ${formattedBefore} to ${formattedAfter})`);
+      }else if(rawChange > 0) {
+        return cy.task('sendTelegramMessage', `*${label}*: value increased by *${percentageChange}%* (from ${formattedBefore} to ${formattedAfter})`);
+      }else if(rawChange < 0){
+        return cy.task('sendTelegramMessage', `*${label}*: value decreased by *${percentageChange}%* (from ${formattedBefore} to ${formattedAfter})`);
+      }else {
+      return cy.task('sendTelegramMessage', `*${label}*: value stayed the same at *${formattedBefore}*`);
+    }
+    }else { 
+    return cy.task('sendTelegramMessage', `*${label}*: Alert! Value is the same: ${formattedBefore} and ${formattedAfter}`);
     }
   }
   });
@@ -97,8 +108,6 @@
     const dayBeforeYesterdayColIndex = today - 1;
 
 
-    cy.log(yesterdayColIndex);
-
     //Navigate to the page and show table
     sidebar.clickSideBarBtn();
     sidebar.clickRevenueBtn();
@@ -115,25 +124,36 @@
     getCellNumericValue1(row.index,dayBeforeYesterdayColIndex).then(beforeVal => {
       getCellNumericValue1(row.index,yesterdayColIndex).then(afterVal => {
         sentDynamicallyTelegramAlert(beforeVal,afterVal,row.name);
-      })
-    })
-  }) 
 
-  //sent telegram message based on value comparison
-  function sentDynamicallyTelegramAlert(before,after,label){
+    //sent telegram message based on value comparison
+    function sentDynamicallyTelegramAlert(before,after,label){
     const formattedBefore = formatWithComas(before);
     const formattedAfter = formatWithComas(after);
 
-    if(isNaN(before) || isNaN(after) || before === 0 || after === 0) {
-      return cy.task('sendTelegramMessage', `*${title}*: *${label}* : Data value is return *Null* value`);
-    }else if (before > after * 1.5) {
-      return cy.task('sendTelegramMessage', `*${label}*: *${label}* : Alert! Value is increased from ${formattedBefore} to ${formattedAfter}`);
-    }else if (before < after * 1.5){
-      return cy.task('sendTelegramMessage', `*${label}*: *${label}* : Alert! Value is decreased from ${formattedBefore} to ${formattedAfter}`);
-    }else {
-      return cy.task('sendTelegramMessage', `*${label}*: *${label}* : Alert! Value  ${formattedBefore} and ${formattedAfter}`)
+    if(isNaN(before) || isNaN(after) || before === 0 || after === 0){
+      return cy.task('sendTelegramMessage', `*${label}*: Data value is return *Null* value`);
+    }else if(before > after || before < after) {
+      const rawChange = ((after - before) /before) * 100;
+      const percentageChange = Math.abs(rawChange).toFixed(2);
+
+      if(rawChange > 50) {
+      return cy.task('sendTelegramMessage', `*${label}*: value suddenly increased by *${percentageChange}%* (from ${formattedBefore} to ${formattedAfter})`);
+      }else if(rawChange < -50) {
+        return cy.task('sendTelegramMessage', `*${label}*: value suddently decreased by *${percentageChange}%* (from ${formattedBefore} to ${formattedAfter})`);
+      }else if(rawChange > 0) {
+        return cy.task('sendTelegramMessage', `*${label}*: value increased by *${percentageChange}%* (from ${formattedBefore} to ${formattedAfter})`);
+      }else if(rawChange < 0){
+        return cy.task('sendTelegramMessage', `*${label}*: value decreased by *${percentageChange}%* (from ${formattedBefore} to ${formattedAfter})`);
+      }else {
+      return cy.task('sendTelegramMessage', `*${label}*: value stayed the same at *${formattedBefore}*`);
+    }
+    }else { 
+    return cy.task('sendTelegramMessage', `*${label}*: Alert! Value is the same: ${formattedBefore} and ${formattedAfter}`);
     }
   }
+   })
+    })
+  }) 
   });
 });
 
