@@ -4,8 +4,14 @@ class RevenuePage {
     homePopUp : () => cy.get('ul.ng-star-inserted'),
     dailyServiceHideDetailBth : () => cy.get(':nth-child(2) > .ant-card-body > .table-detail > .col-12 > .ant-collapse > .ant-collapse-item > .ant-collapse-header'),
     serviceRevenueHideDetailBtn : () => cy.get(':nth-child(3) > .ant-card-body > .table-detail > .col-12 > .ant-collapse > .ant-collapse-item > .ant-collapse-header'),
+    dailyVoiceTrafficHideDetailBtn : () => cy.get(':nth-child(2) > .ant-card-body > .table-detail > .col-12 > .ant-collapse > .ant-collapse-item > .ant-collapse-header'),
+    dailyDetailVoiceTrafficHideDetailBtn : () => cy.get(':nth-child(3) > .ant-card-body > .table-detail > .col-12 > .ant-collapse > .ant-collapse-item > .ant-collapse-header'),
+    addedVoiceTrafficHideDetailBtn: () => cy.get(':nth-child(4) > .ant-card-body > .table-detail > .col-12 > .ant-collapse > .ant-collapse-item > .ant-collapse-header'),
     dailyServiceResultTable :() => cy.get(':nth-child(2) > .ant-card-body > .table-detail > .col-12 > .ant-collapse > .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box>div'),
-   serviceRevenueResultTable :() => cy.get(':nth-child(3) > .ant-card-body > .table-detail > .col-12 > .ant-collapse > .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box>div'),
+    serviceRevenueResultTable :() => cy.get(':nth-child(3) > .ant-card-body > .table-detail > .col-12 > .ant-collapse > .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box>div'),   
+    dailyVoiceTrafficResultTable : () => cy.get(':nth-child(2) > .ant-card-body > .table-detail > .col-12 > .ant-collapse > .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box > nz-table.ng-star-inserted'),
+    dailyDetailVoiceTrafficResultTable : () => cy.get(':nth-child(3) > .ant-card-body > .table-detail > .col-12 > .ant-collapse > .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box > nz-table.ng-star-inserted'),
+    addVoiceTrafficResultTable: () => cy.get(':nth-child(4) > .ant-card-body > .table-detail > .col-12 > .ant-collapse > .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box > nz-table.ng-star-inserted'),
    }
 
    checkDailyServiceRevenueDiv(){
@@ -24,6 +30,18 @@ class RevenuePage {
       this.elements.serviceRevenueHideDetailBtn().click();
    }
 
+   clickDailyVoiceTrafficHideDetailBtn() {
+      this.elements.dailyVoiceTrafficHideDetailBtn().click();
+   }
+
+   clickDailyDetailVoiceTrafficHideDetailBtn() {
+      this.elements.dailyDetailVoiceTrafficHideDetailBtn().click();
+   }
+
+   clickAddedVoiceTrafficHideDetailBtn() {
+      this.elements.addedVoiceTrafficHideDetailBtn().click();
+   }
+
    checkdailyServiceResultTable() {
      return this.elements.dailyServiceResultTable();
    }
@@ -33,8 +51,16 @@ class RevenuePage {
    }
 
 
-   checkdailyServiceResultTableRow() {
-      return this.elements.dailyServiceResultTableRow();
+   checkdailyVoiceTrafficResultTable() {
+      return this.elements.dailyVoiceTrafficResultTable();
+   }
+
+   checkdailyDetailVoiceTrafficResultTable() {
+      return this.elements.dailyDetailVoiceTrafficResultTable();
+   }
+
+   checkAddedVoiceTrafficResultTable() {
+      return this.elements.addVoiceTrafficResultTable();
    }
 }
 
