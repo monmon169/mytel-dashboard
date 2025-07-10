@@ -49,7 +49,7 @@ module.exports = defineConfig({
 
     return transporter.sendMail({
       from: '"Automation Bot" <ayemyatmon33@mytel.com.mm>',
-      to: 'ayemyatmon33@mytel.com.mm,heinhtet5@mytel.com.mm', 
+      to: 'ayemyatmon33@mytel.com.mm,caothanhtung@mytel.com.mm', 
       subject: subject,
       text: body
     }).then(info => {
