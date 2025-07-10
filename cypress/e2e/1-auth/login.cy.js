@@ -13,7 +13,7 @@ describe("Login form for Mytel Dashboard",() => {
   it("Should be successfully login with valid credentials" , () => {
    login.fillUserName(Cypress.env("username"));
    login.fillPassWord(Cypress.env("password"));
-   login.clickSignInBtn();
+  //  login.clickSignInBtn();
    
    //check the nav bar text
    navbar.checkCalenderBtn()

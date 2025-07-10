@@ -7,11 +7,18 @@ class RevenuePage {
     dailyVoiceTrafficHideDetailBtn : () => cy.get(':nth-child(2) > .ant-card-body > .table-detail > .col-12 > .ant-collapse > .ant-collapse-item > .ant-collapse-header'),
     dailyDetailVoiceTrafficHideDetailBtn : () => cy.get(':nth-child(3) > .ant-card-body > .table-detail > .col-12 > .ant-collapse > .ant-collapse-item > .ant-collapse-header'),
     addedVoiceTrafficHideDetailBtn: () => cy.get(':nth-child(4) > .ant-card-body > .table-detail > .col-12 > .ant-collapse > .ant-collapse-item > .ant-collapse-header'),
+    vasMainBalanceHideDetailBtn: () => cy.get(':nth-child(1) > .ant-card-body > .table-detail > .col-12 > .ant-collapse > .ant-collapse-item > .ant-collapse-header'),
+    vasMonthlyMainBalanceHideDetailBtn: () => cy.get('[style="margin-top: 42px;"] > .ant-card-body > .table-detail > .col-12 > .ant-collapse > .ant-collapse-item > .ant-collapse-header'),
+    masHideDetailBtn: () => cy.get('.ant-collapse-header'),
     dailyServiceResultTable :() => cy.get(':nth-child(2) > .ant-card-body > .table-detail > .col-12 > .ant-collapse > .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box>div'),
     serviceRevenueResultTable :() => cy.get(':nth-child(3) > .ant-card-body > .table-detail > .col-12 > .ant-collapse > .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box>div'),   
     dailyVoiceTrafficResultTable : () => cy.get(':nth-child(2) > .ant-card-body > .table-detail > .col-12 > .ant-collapse > .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box > nz-table.ng-star-inserted'),
     dailyDetailVoiceTrafficResultTable : () => cy.get(':nth-child(3) > .ant-card-body > .table-detail > .col-12 > .ant-collapse > .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box > nz-table.ng-star-inserted'),
     addVoiceTrafficResultTable: () => cy.get(':nth-child(4) > .ant-card-body > .table-detail > .col-12 > .ant-collapse > .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box > nz-table.ng-star-inserted'),
+    vasMainBalanceResultTable: () => cy.get(':nth-child(1) > .ant-card-body > .table-detail > .col-12 > .ant-collapse > .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box > nz-table.ng-star-inserted'),
+    vasMonthlyMainBalanceResultTable: () => cy.get('[style="margin-top: 42px;"] > .ant-card-body > .table-detail > .col-12 > .ant-collapse > .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box > nz-table.ng-star-inserted'),
+    masResultTable: () => cy.get('nz-table.ng-star-inserted'),
+    
    }
 
    checkDailyServiceRevenueDiv(){
@@ -42,6 +49,17 @@ class RevenuePage {
       this.elements.addedVoiceTrafficHideDetailBtn().click();
    }
 
+   clickVASmainBalaceHideDetailBtn() {
+      this.elements.vasMainBalanceHideDetailBtn().click();
+   }
+
+   clickvasMonthlyMainBalanceHideDetailBtn() {
+      this.elements.vasMonthlyMainBalanceHideDetailBtn().click();
+   }
+   
+   clickmasHideDetailBtn() {
+      this.elements.masHideDetailBtn().click();
+   }
    checkdailyServiceResultTable() {
      return this.elements.dailyServiceResultTable();
    }
@@ -62,6 +80,19 @@ class RevenuePage {
    checkAddedVoiceTrafficResultTable() {
       return this.elements.addVoiceTrafficResultTable();
    }
+
+   checkvasMainBalanceResultTable() {
+      return this.elements.vasMainBalanceResultTable();
+   }
+
+   checkvasMonthlyMainBalanceResultTable() {
+      return this.elements.vasMonthlyMainBalanceResultTable();
+   }
+
+   checkmasResultTable() {
+      return this.elements.masResultTable();
+   }
+
 }
 
 export default RevenuePage;
