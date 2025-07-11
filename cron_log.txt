@@ -2289,3 +2289,114 @@ Telegram message sent.
   └────────────────────────────────────────────────────────────────────────────────────────────────┘
     ✔  All specs passed!                        00:16        2        2        -        -        -  
 
+
+DevTools listening on ws://127.0.0.1:52473/devtools/browser/be2da083-8b6f-4fdf-8667-fa0abdd7c8f3
+
+====================================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:        14.4.1                                                                         │
+  │ Browser:        Electron 130 (headless)                                                        │
+  │ Node Version:   v22.13.1 (/usr/local/bin/node)                                                 │
+  │ Specs:          2 found (1-auth/login.cy.js, 2-summaryReport/revenue.cy.js)                    │
+  │ Searched:       cypress/e2e/**/*.cy.{js,jsx,ts,tsx}                                            │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  1-auth/login.cy.js                                                              (1 of 2)
+
+
+  Login form for Mytel Dashboard
+    1) Should be successfully login with valid credentials
+
+
+  0 passing (7s)
+  1 failing
+
+  1) Login form for Mytel Dashboard
+       Should be successfully login with valid credentials:
+     AssertionError: Timed out retrying after 4000ms: Expected to find element: `body > app-root > vna-layout-full > menu-nav > div > nz-layout > nz-content > nz-layout > div > nz-header > app-mytel-header > div > div > div.block-date-filter.d-flex.justify-content-center.col-4`, but never found it.
+      at Context.eval (webpack://mytel-dashboard-automation/./cypress/e2e/1-auth/login.cy.js:20:3)
+
+
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        1                                                                                │
+  │ Passing:      0                                                                                │
+  │ Failing:      1                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  1                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     6 seconds                                                                        │
+  │ Spec Ran:     1-auth/login.cy.js                                                               │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  /Users/bryan/Desktop/Automation/Mytel Dashboard Automation/screenshots/1-auth/lo    (2560x1440)
+     gin.cy.js/Login form for Mytel Dashboard -- Should be successfully login with va               
+     lid credentials (failed).png                                                                   
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  2-summaryReport/revenue.cy.js                                                   (2 of 2)
+
+
+  Revenue
+    ✓ MYN143 - Daily Service Revenue at "Revenue" Screen (4128ms)
+Telegram message sent.
+Telegram message sent.
+    ✓ Service Revenue Date Details at "Revenue" Screen (3738ms)
+    ✓ MYN194 - Daily Voice Traffic at "Mobile" Screen (1952ms)
+    ✓ Daily Detail Voice Traffic at "Mobile" Screen (2292ms)
+    ✓ Daily Detail Added Voice Traffic at "Mobile" Screen (2059ms)
+Telegram message sent.
+Telegram message sent.
+    ✓ Daily VAS Revenue from Main Balance at 'Digital Services' Screen (3770ms)
+Telegram message sent.
+Telegram message sent.
+    ✓ Monthly VAS Revenue from Main Balance at 'Digital Services' Screen (3316ms)
+Telegram message sent.
+    ✓ MAS' Screen (2486ms)
+
+
+  8 passing (24s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        8                                                                                │
+  │ Passing:      8                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     24 seconds                                                                       │
+  │ Spec Ran:     2-summaryReport/revenue.cy.js                                                    │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+====================================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ ✖  1-auth/login.cy.js                       00:06        1        -        1        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  2-summaryReport/revenue.cy.js            00:24        8        8        -        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    ✖  1 of 2 failed (50%)                      00:30        9        8        1        - 

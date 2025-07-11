@@ -22,9 +22,7 @@ class LoginPage {
     clickSignInBtn() {
         this.elements.signInBtn().click();
     }
-    checkErrorMsg() {
-       return this.texts.errorMsg()
-    }
+    
 }
 
 export default LoginPage;

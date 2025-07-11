@@ -36,30 +36,30 @@ module.exports = defineConfig({
     });
   },
 
-  sendZimbraEmail({ subject, body }) {
-    let transporter = nodemailer.createTransport({
-      host: 'smtp.mytel.com.mm', // replace with real Zimbra SMTP server
-      port: 465,
-      secure: true,
-      auth: {
-        user: 'ayemyatmon33@mytel.com.mm',
-        pass: 'Met@lliC@13#!'
-      }
-    });
+  // sendZimbraEmail({ subject, body }) {
+  //   let transporter = nodemailer.createTransport({
+  //     host: 'smtp.mytel.com.mm', // replace with real Zimbra SMTP server
+  //     port: 465,
+  //     secure: true,
+  //     auth: {
+  //       user: 'ayemyatmon33@mytel.com.mm',
+  //       pass: 'Met@lliC@13#!'
+  //     }
+  //   });
 
-    return transporter.sendMail({
-      from: '"Automation Bot" <ayemyatmon33@mytel.com.mm>',
-      to: 'ayemyatmon33@mytel.com.mm,caothanhtung@mytel.com.mm', 
-      subject: subject,
-      text: body
-    }).then(info => {
-      console.log('Email sent: ', info.messageId);
-      return true;
-    }).catch(error => {
-      console.error('Email sending failed:', error.message);
-      throw new Error(error.message);
-    });
-  }
+  //   return transporter.sendMail({
+  //     from: '"Automation Bot" <ayemyatmon33@mytel.com.mm>',
+  //     to: 'ayemyatmon33@mytel.com.mm,caothanhtung@mytel.com.mm', 
+  //     subject: subject,
+  //     text: body
+  //   }).then(info => {
+  //     console.log('Email sent: ', info.messageId);
+  //     return true;
+  //   }).catch(error => {
+  //     console.error('Email sending failed:', error.message);
+  //     throw new Error(error.message);
+  //   });
+  // }
 });
     },
   },
